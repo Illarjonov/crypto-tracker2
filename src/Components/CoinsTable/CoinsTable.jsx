@@ -37,8 +37,8 @@ const {currency, symbol} = CryptoState();
         setLoading(true)
 
         const {data} = await axios.get(CoinList(currency));
-
         setCoins(data);
+
         setLoading(false);
 }
 //при новой отрисовке по курсу брать новый запрос с сервера
@@ -125,7 +125,7 @@ const {currency, symbol} = CryptoState();
 
                             return(
                                 <TableRow
-                                    onClick={()=> navigate(`/coins/${row.symbol}`)}
+                                    onClick={()=> navigate(`/coins/${row.id}`)}
                                     className= {classes.row}
                                     key={row.name}>
                                         <TableCell
