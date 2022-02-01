@@ -47,16 +47,29 @@
     width: 110px;
 }
 
+.coin-volume1 {
+    width: 155px;
+    text-align: center;
+}
 .coin-volume {
     width: 155px;
+
 }
 
 .coin-marketcap {
+     width: 230px;
+ }
+.coin-marketcap1 {
     width: 230px;
+    text-align: center;
 }
 
 .coin-percent {
     width: 100px;
+}
+.coin-percent1 {
+    width: 100px;
+    text-align: center;
 }
 
 .red {
@@ -66,3 +79,4 @@
 .green {
     color: #11d811;
 }
+.a{style: none;}

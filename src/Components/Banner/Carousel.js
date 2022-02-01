@@ -39,6 +39,7 @@ const Carousel = () => {
     const fetchTrendingCoins = async () => {
         const { data } = await axios.get(TrendingCoins( currency ))
         setTrending(data)
+        console.log(trending)
     }
 
     useEffect(()=>{
@@ -48,7 +49,7 @@ const Carousel = () => {
     const items =  trending.map(coin=>{
         let profit = coin.price_change_percentage_24h >= 0;
         return<a
-            href={'/coins/${coin.id'}
+            href={`/coins/${coin.symbol}`}
             className={classes.carouselItem}>
             <img
                 src={coin?.image}
@@ -61,7 +62,7 @@ const Carousel = () => {
                      <span
                          style={{
                             color: profit > 0 ? "rgb(14, 203, 129)": "red",
-                             fontWeight: 500,
+                            fontWeight: 500,
                          }}>
                         {profit && "+"}{coin?.price_change_percentage_24h.toFixed(2)}%
                     </span>
