@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44328262-33e2-4b93-961b-7ba826344230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/CoinsTable/TableHeader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/UI/loader/loader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/UI/loader/loader.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Banner/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Banner/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CoinsTable/Coin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CoinsTable/Coin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CoinsTable/Coin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CoinsTable/Coin.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,13 +36,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="195">
+              <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#743#873#0" />
               </folding>
             </state>
           </provider>
@@ -111,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Banner/Carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="106">
+              <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -137,6 +131,16 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>console</find>
+      <find>right</find>
+      <find>tablecell</find>
+      <find>align</find>
+      <find>align=&quot;right&quot;</find>
+      <find>his</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -155,10 +159,10 @@
         <option value="$PROJECT_DIR$/src/Pages/HomePage.jsx" />
         <option value="$PROJECT_DIR$/src/CryptoContext.js" />
         <option value="$PROJECT_DIR$/src/Components/CoinsTable/Coin.jsx" />
-        <option value="$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx" />
         <option value="$PROJECT_DIR$/src/Components/CoinsTable/Coin.css" />
         <option value="$PROJECT_DIR$/src/Components/CoinsTable/TableHeader.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Banner/Carousel.js" />
+        <option value="$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx" />
       </list>
     </option>
   </component>
@@ -313,12 +317,12 @@
       <updated>1643282122078</updated>
       <workItem from="1643282123968" duration="15186000" />
       <workItem from="1643643015646" duration="3157000" />
-      <workItem from="1643688071731" duration="9928000" />
+      <workItem from="1643688071731" duration="22890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28271000" />
+    <option name="totallyTimeSpent" value="41233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="40" width="974" height="1047" extended-state="0" />
@@ -329,7 +333,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18696581" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
@@ -434,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Banner/Banner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pages/HomePage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -466,30 +460,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/Coin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/Coin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,12 +477,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Banner/Banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/Coin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Banner/Carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="106">
+          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/CoinsTable/CoinsTable.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#743#873#0" />
           </folding>
         </state>
       </provider>
