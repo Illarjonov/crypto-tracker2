@@ -2,13 +2,13 @@ import Header from './Components/Header'
 import HomePage from './Pages/HomePage'
 import CoinPage from "./Pages/CoinPage";
 import './App.css';
-import {Route, Routes, useParams} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
 import {makeStyles} from "@material-ui/core";
 
 
 function App() {
-  let {id} = useParams();
+
 //materialUI make styles here
     const useStyles = makeStyles(()=>({
         App: {

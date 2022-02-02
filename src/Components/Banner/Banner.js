@@ -45,10 +45,18 @@ const Banner = () => {
                         variant= "subtitle2"
                         style={{
                             color: "darkgrey",
-                            textTransform: "capitalize",
+
                             fontFamily: "Montserrat"
                         }}>
-                        Pet-project, сделанный с помощью иностранных методичек, сверстано с помощью materialUI
+                    Pet-project, деланный с подобия проекта какого-то индуса, верстка взята подчистую и реализована с помощью materialUI
+                    </Typography>
+                    <Typography
+                        variant= "subtitle2"
+                        style={{
+                            color: "darkgrey",
+                            fontFamily: "Montserrat"
+                        }}>
+                        Реализовано на HOOKах, api взят с marketCap, проект делался для отточения запросов и хуков
                     </Typography>
                 </div>
                 <Carousel/>

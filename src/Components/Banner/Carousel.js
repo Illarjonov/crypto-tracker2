@@ -25,7 +25,7 @@ const useStyle = makeStyles((theme)=>({
 )
 //52233 => 52,233 steal from the internet
 export function numberWithCommas (x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "`");
 }
 
 const Carousel = () => {
@@ -70,7 +70,7 @@ const Carousel = () => {
                 </span>
 
             <span style={{fontSize: 22, fontWeight: 500}}>
-                    {symbol} {numberWithCommas(coin ?.current_price.toFixed(2) ) }
+                    {symbol} {numberWithCommas(coin?.current_price.toFixed(2) ) }
                 </span>
         </a>
     })
