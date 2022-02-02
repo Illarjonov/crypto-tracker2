@@ -56,7 +56,7 @@ const Banner = () => {
                             color: "darkgrey",
                             fontFamily: "Montserrat"
                         }}>
-                        Реализовано на HOOKах, api взят с marketCap, проект делался для отточения запросов и хуков
+                        Реализовано на HOOKах, api взят с marketCap, проект делался для отточения AJAX запросов и HOOKов
                     </Typography>
                 </div>
                 <Carousel/>

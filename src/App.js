@@ -9,7 +9,7 @@ import {makeStyles} from "@material-ui/core";
 
 function App() {
 
-//materialUI make styles here
+//materialUI make styles here.
     const useStyles = makeStyles(()=>({
         App: {
             backgroundColor: "#14161a",
