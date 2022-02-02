@@ -9,10 +9,6 @@ import {Typography} from "@material-ui/core";
 import Loader from "../Components/UI/loader/loader";
 
 
-export function numberWithCommas (x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
 const CoinPage = () => {
 
 const {id} = useParams();
@@ -35,7 +31,7 @@ const { currency, symbol } = CryptoState();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(coin)
+   // console.log(coin)
 const useStyles = makeStyles((theme)=>({
         container: {
             display: "flex",
@@ -134,8 +130,8 @@ if (!coin) return <Loader/>
                 </span>
             </div>
         </div>
-            <CoinInfo coin={coin}/>
-        </div>
+            <CoinInfo coin={coin} />
+    </div>
     )
 }
  export default CoinPage;
