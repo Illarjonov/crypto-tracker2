@@ -37,8 +37,8 @@ const Banner = () => {
                             fontWeight: "bold",
                             marginBottom: 15,
                             fontFamily: "Montserrat"
-                        }}>
-                            Crypto Tracker v2
+                        }}
+                    > Crypto Tracker v2
                     </Typography>
 
                     <Typography
@@ -47,16 +47,16 @@ const Banner = () => {
                             color: "darkgrey",
 
                             fontFamily: "Montserrat"
-                        }}>
-                    Pet-project, деланный с подобия проекта какого-то индуса, верстка взята подчистую и реализована с помощью materialUI
+                        }}
+                    > Pet-project, деланный с подобия проекта какого-то индуса, верстка взята подчистую и реализована с помощью materialUI
                     </Typography>
                     <Typography
                         variant= "subtitle2"
                         style={{
                             color: "darkgrey",
                             fontFamily: "Montserrat"
-                        }}>
-                        Реализовано на HOOKах, api взят с marketCap, проект делался для отточения AJAX запросов и HOOKов
+                        }}
+                    > Реализовано на HOOKах, api взят с marketCap, проект делался для отточения AJAX запросов и HOOKов
                     </Typography>
                 </div>
                 <Carousel/>

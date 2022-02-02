@@ -11,6 +11,7 @@ import {
     makeStyles,
     createTheme} from "@material-ui/core";
 import {CryptoState} from "../CryptoContext";
+import AuthModal from "./Authentication/AuthModal";
 
 const useStyles = makeStyles(()=>({
     title:{
@@ -63,6 +64,7 @@ const Header = () => {
                         <MenuItem value={"RUB"}>RUB</MenuItem>
                     </Select>
 
+                    <AuthModal/>
                 </Toolbar>
             </Container>
         </AppBar>

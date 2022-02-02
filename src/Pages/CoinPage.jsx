@@ -73,10 +73,11 @@ const useStyles = makeStyles((theme)=>({
                 alignItems: "start",
             },
         },
-    }))
+    }));
 const classes = useStyles();
 
 if (!coin) return <Loader/>
+
     return (
         <div className={classes.container}>
             <div className={classes.sidebar}>
@@ -95,7 +96,7 @@ if (!coin) return <Loader/>
                     <a href={coin?.links.blockchain_site[0]}> { (coin?.links.blockchain_site[0]) } </a>
                 </Typography>
 
-            &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
             <div className={classes.marketData}>
                 <span style = {{display: "flex"}}>
                     <Typography variant="h5" classes={classes.heading}>

@@ -1,7 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
-import axios from "axios";
-import {CoinList} from "../../config/api";
 import {CryptoState} from "../../CryptoContext";
 import Loader from '../UI/loader/loader'
 import {
@@ -18,34 +16,22 @@ import {
     TableContainer,
     makeStyles} from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";
-//import Coin from './Coin'
-//import TableHeader from "./TableHeader";
 import {numberWithCommas} from "../Banner/Carousel";
 
 
 
 const CoinsTable = () => {
 
-const [coins, setCoins] = useState([])
-const [loading, setLoading] = useState(false)
-const [search, setSearch] = useState('')
-const [page,setPage] = useState(1)
+const [search, setSearch] = useState('');
+const [page,setPage] = useState(1);
 const navigate = useNavigate();
-const {currency, symbol} = CryptoState();
+const {currency, symbol, coins, loading, fetchCoins} = CryptoState();
 
-    const fetchCoins = async () =>{
-        setLoading(true)
-
-        const {data} = await axios.get(CoinList(currency));
-        setCoins(data);
-
-        setLoading(false);
-}
 //при новой отрисовке по курсу брать новый запрос с сервера
     useEffect(()=>{
         fetchCoins()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[currency])
+    },[currency]);
 
     const darkTheme = createTheme({
         palette: {
@@ -59,9 +45,9 @@ const {currency, symbol} = CryptoState();
 //includes- пределяет содержит ли массив искомый эллемент, на выходе бул. В индексОф на выходе индекс
     const handlerSearch= () => {
         return coins.filter(
-            (coin)=>(
-                coin.name.toLowerCase().includes(search.toLowerCase()) ||
-                coin.symbol.toLowerCase().includes(search.toLowerCase())
+                    (coin)=>(
+                        coin.name.toLowerCase().includes(search.toLowerCase()) ||
+                        coin.symbol.toLowerCase().includes(search.toLowerCase())
         ))
     }
 

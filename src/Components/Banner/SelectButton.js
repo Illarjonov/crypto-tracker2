@@ -25,9 +25,10 @@ const SelectButton = ({ children, selected, onClick }) => {
     const classes = useStyles();
 
     return (
-        <span onClick={onClick} className={classes.selectbutton}>
-      {children}
-    </span>
+        <span
+            onClick={onClick}
+            className={classes.selectbutton}
+        > {children} </span>
     );
 };
 

@@ -30,33 +30,34 @@ export function numberWithCommas (x) {
 
 const Carousel = () => {
     const classes = useStyle();
-//top coins
-    const [trending, setTrending] = useState([])
-
+    const [trending, setTrending] = useState([]);
     const { currency, symbol } = CryptoState();
     //get context currency
 
     const fetchTrendingCoins = async () => {
-        const { data } = await axios.get(TrendingCoins( currency ))
-        setTrending(data)
-        console.log(trending)
-    }
+            const { data } = await axios.get( TrendingCoins(currency) );
+            setTrending(data);
+    };
 
     useEffect(()=>{
         fetchTrendingCoins()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[currency])
-//
+    },[currency]);
+
     const items =  trending.map(coin=>{
+
         let profit = coin.price_change_percentage_24h >= 0;
+
         return <a
-            href={`/coins/${coin.id}`}
-            className={classes.carouselItem}>
+                href={`/coins/${coin.id}`}
+                className={classes.carouselItem}
+               >
             <img
                 src={coin?.image}
                 alt={coin.name}
                 height="80"
-                style={{marginBottom: 10}}/>
+                style={{marginBottom: 10}}
+            />
             <span>
                     {coin?.symbol}
                 &nbsp;
@@ -65,15 +66,18 @@ const Carousel = () => {
                             color: profit > 0 ? "rgb(14, 203, 129)": "red",
                             fontWeight: 500,
                          }}>
-                        {profit && "+"}{coin?.price_change_percentage_24h.toFixed(2)}%
+                             {profit && "+"}{coin?.price_change_percentage_24h.toFixed(2)}%
                     </span>
-                </span>
+            </span>
 
-            <span style={{fontSize: 22, fontWeight: 500}}>
-                    {symbol} {numberWithCommas(coin?.current_price.toFixed(2) ) }
-                </span>
+            <span
+                style={{
+                    fontSize: 22,
+                    fontWeight: 500}}
+            >   {symbol} {numberWithCommas(coin?.current_price.toFixed(2) ) }
+            </span>
         </a>
-    })
+    });
 
     const responsive = {
         0: {
@@ -82,7 +86,7 @@ const Carousel = () => {
         512: {
             items: 4,
         }
-    }
+    };
 
     return(
         <div className={classes.carousel}>
@@ -98,5 +102,5 @@ const Carousel = () => {
                 items={items}/>
         </div>
     )
-}
+};
 export default Carousel;

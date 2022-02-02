@@ -48,7 +48,7 @@ const CoinInfo = ( {coin} ) => {
     useEffect(()=>{
         fetchHistoricData()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[days])
+    },[days]);
 
     //чтобы отрабатывало только при изменении дня
 
@@ -67,17 +67,18 @@ const CoinInfo = ( {coin} ) => {
         <ThemeProvider theme={darkTheme}>
             <div className={classes.container}>
                 {!historicalData | flag===false
-                    ? (<Loader/>)
-                    : (  <>{ console.log(historicalData)}
-                            <Line options={{
-                                elements: {
+                    ? ( <Loader/>)
+                    : ( <>
+                            <Line
+                                  options={{
+                                    elements: {
                                         point: {
                                             radius: 1,
-                                            },
                                         },
+                                    },
                                  }}
                                   data = {{
-                                      labels: historicalData.map((coin) => {
+                                    labels: historicalData.map((coin) => {
                                           let date = new Date(coin[0]);
                                           let time =
                                               date.getHours() > 12
@@ -85,15 +86,15 @@ const CoinInfo = ( {coin} ) => {
                                                   : `${date.getHours()}:${date.getMinutes()} AM`;
                                           return days === 1 ? time : date.toLocaleDateString();
                                       }),
-                                      datasets: [
+                                    datasets: [
                                           {
                                               data: historicalData.map((coin) => coin[1]),
                                               label: `Price ( Past ${days} Days ) in ${currency}`,
                                               borderColor: "#EEBC1D",
                                           },
-                                      ],
+                                    ],
                                   }}
-                                 />
+                            />
 
                             <div
                                 style={{
@@ -103,17 +104,16 @@ const CoinInfo = ( {coin} ) => {
                                     width: "100%",
                                 }}
                             >
-                                {chartDays.map((day) => (
-                                    <SelectButton
-                                        key={day.value}
-                                        onClick={() => {setDays(day.value);
-                                            setFlag(false);
-                                        }}
-                                        selected={day.value === days}
-                                    >       {day.label}      </SelectButton>
+                                { chartDays.map((day) => (
+                                      <SelectButton
+                                            key={day.value}
+                                            onClick={() => {setDays(day.value);
+                                            setFlag(false)}}
+                                            selected={day.value === days}
+                                      >       {day.label}      </SelectButton>
                                 ))}
                             </div>
-                         </>
+                        </>
                     )
                 }
             </div>
