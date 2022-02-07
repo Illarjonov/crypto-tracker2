@@ -39,7 +39,9 @@ const CryptoContext = ({children}) => {
                             setCurrency,
                             loading,
                             coins,
-                            fetchCoins
+                            fetchCoins,
+                            alert,
+                            setAlert,
                         }}
             > {children} </Crypto.Provider>
 

@@ -4,6 +4,7 @@ import CoinPage from "./Pages/CoinPage";
 import './App.css';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import {makeStyles} from "@material-ui/core";
+import Alert from "./Components/Alert";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                     <Route path = '/coins/:id' element={<CoinPage/>}/>
                   </Routes>
         </div>
+        <Alert open = {false}/>
     </BrowserRouter>
   );
 }
