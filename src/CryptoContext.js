@@ -3,6 +3,7 @@ import {createContext, useContext, useState, useEffect} from "react";
 import axios from "axios";
 import {CoinList} from "./config/api";
 
+
 const Crypto = createContext();
 
 //change select currency
@@ -18,6 +19,8 @@ const CryptoContext = ({children}) => {
                                 message: "",
                                 type: "success",
                              });
+
+
 
     const fetchCoins = async () =>{
         setLoading(true);

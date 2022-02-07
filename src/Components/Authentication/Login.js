@@ -1,11 +1,48 @@
 import React, {useState} from 'react'
 import {Box, Button, TextField} from "@material-ui/core";
+import {CryptoState} from "../../CryptoContext";
+import {signInWithEmailAndPassword} from "firebase/auth"; //@firebase/auth
+import { auth } from "../../firebase";
 
 const Login = ({handleClose}) => {
     const [email, setEmail]= useState("");
     const [password, setPassword]= useState("");
 
-    const handleSubmit = () => { };
+    const {setAlert } = CryptoState();
+
+    const handleSubmit = async () => {
+            if (!email || !password){
+                setAlert({
+                    open: true,
+                    message: 'пожалуйста заполните все поля',
+                    type: "error",
+                });
+            return;
+            }
+
+        try {
+            const results = await  signInWithEmailAndPassword(auth, email, password);
+
+            console.log(results);
+
+            setAlert({
+                open: true,
+                message: `Авторизация прошла успешно. Добро пожаловать, ${results.user.email}`,
+                type: "success",
+            });
+
+            handleClose()
+
+        } catch (error) {
+                setAlert({
+                    open: true,
+                    message: error.message,
+                    type: "error"
+                })
+        }
+
+    };
+
     return(
         <Box
             p={3}

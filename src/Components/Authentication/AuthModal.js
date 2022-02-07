@@ -4,7 +4,6 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import {Button, AppBar, Tabs, Tab} from "@material-ui/core";
-import TabPanel from "@material-ui/lab/TabPanel";
 import Signup from "./Signup";
 import Login from "./Login";
 
@@ -36,8 +35,8 @@ export default function AuthModal() {
     const [value, setValue] = useState(0);
     const handleChange = (event, newValue) => {
         setValue(newValue);
-    };
-    console.log(value)
+    };//value = login or sign up
+
     return (
         <div>
             <Button
